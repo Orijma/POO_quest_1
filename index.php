@@ -2,19 +2,13 @@
 
 require_once 'Bicycle.php';
 require_once 'Cars.php';
+require_once 'Truck.php';
 
-$carsHomer = new Cars();
-
-$carsHomer -> _construct('pink', 4, 'gazole');
-echo $carsHomer -> forward();
-echo $carsHomer ->brake();
-
-$bikeBart = new Bicycle();
-$bikeBart -> _construct('red');
-echo $bikeBart -> forward();
-echo $bikeBart ->brake();
-
-
-
+$truck = new Truck('red', 2, 'fuel');
+$truck-> setStockageCapacity(20);
+$truck->setCargo(20);
+echo $truck->full();
+echo $truck->forward();
+var_dump($truck);
 
 ?>
