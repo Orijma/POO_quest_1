@@ -4,8 +4,8 @@ include_once 'Vehicle.php';
 
 final class ResidentialWay extends HighWay {
 
-    protected int $nvLane = 2;
-    protected int $maxSpeed = 50;
+    private int $nvLane = 2;
+    private int $maxSpeed = 50;
 
     public function addVehicle($vehicle)
     {
